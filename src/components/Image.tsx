@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
@@ -20,8 +19,8 @@ const Image = (props: {
 }) => {
   return (
     <Picture {...props.animations}>
-      <source media="(max-width: 768px)" srcset={props.mobile} />
-      <source media="(min-width: 769px)" srcset={props.desktop} />
+      <source media="(max-width: 768px)" srcSet={props.mobile} />
+      <source media="(min-width: 769px)" srcSet={props.desktop} />
       <Img
         src={props.desktop}
         style={props.style}
